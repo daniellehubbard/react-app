@@ -1,33 +1,61 @@
 .App {
-  text-align: center;
+  padding: 1em;
+  width: 50%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.gift-card-check {
+  float: left;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.gift-card-form {
+  margin: 1em 0 1em 0;
+}
+
+
+.hide-form {
+  display: none;
+}
+
+.saved-card {
+  background-color: lightgray;
+  margin: 10px 0 10px 0;
+  font-size: 0.75em;
+  padding: 10px;
+}
+
+.saved-card label {
+  display: block;
+  font-weight: bold;
+}
+
+.saved-card .amount {
+  text-align: right;
+}
+
+.show-saved {
+  display: none;
+}
+
+.gc-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.gc-inputs input {
+  padding: 10px;
+}
+
+.gc-inputs button {
+  background-color: black;
+  padding: 10px;
   color: white;
+  font-weight: bold;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error input {
+  border-style: bold;
+  border-color: red;
 }
